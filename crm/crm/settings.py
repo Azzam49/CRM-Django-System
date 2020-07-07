@@ -124,8 +124,11 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_URL ='/images/' #for template to find images
+
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
 
-MEDIA_URL ='/images/'
+#for profie_pic field in Customer model to save picture
+MEDIA_ROOT = os.path.join(BASE_DIR, 'static/images')
